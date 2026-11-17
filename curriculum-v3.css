@@ -1,0 +1,8 @@
+/* Branch-first curriculum and lesson layout. */
+.curriculum-note { margin: 16px 0 0; color: var(--muted); line-height: 1.8; }
+.lesson-card .print-btn { margin-top: 9px; }
+.video-link { display: inline-flex; margin: 8px 0; padding: 10px 14px; border-radius: 12px; background: rgba(124,58,237,.1); color: var(--purple-dark); font-weight: 700; text-decoration: none; }
+.lesson-aside .print-btn,.lesson-aside .primary-btn { width: 100%; margin-top: 10px; justify-content: center; }
+.lesson-aside > a { display: block; margin: 12px 0; }
+.print-form { min-width: 240px; }
+@media print { .topbar,.hero,.main-nav,button { display: none !important; } .lesson-card { break-inside: avoid; } }

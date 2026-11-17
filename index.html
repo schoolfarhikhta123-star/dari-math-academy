@@ -1,34 +1,21 @@
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
   <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="theme-color" content="#7c3aed" />
-    <meta name="description" content="آکادمی آفلاین ریاضی صنوف هفتم تا دوازدهم؛ حساب، الجبر، هندسه و مثلثات." />
-    <link rel="manifest" href="./manifest.webmanifest" />
-    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
-    <link rel="stylesheet" href="./styles.css" />
-    <title>آکادمی ریاضی | نظام آموزشی دیجیتال</title>
+    <meta charset="UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="theme-color" content="#7c3aed" />
+    <meta name="description" content="آکادمی ریاضی: حساب، الجبر، هندسه و مثلثات؛ درس‌های تحریری، مثال‌ها، ویدیوهای موضوعی و کاربرگ‌های ۳۰ پرسشی." />
+    <link rel="manifest" href="./manifest.webmanifest" /><link rel="icon" href="./icon.svg" type="image/svg+xml" /><link rel="stylesheet" href="./styles.css" /><link rel="stylesheet" href="./curriculum-v3.css" />
+    <title>آکادمی ریاضی | چهار شاخهٔ ریاضی</title>
   </head>
-  <body>
-    <div class="page-shell">
-      <header class="topbar">
-        <div class="brand-wrap"><div class="brand-badge">📘</div><div><p class="brand-kicker">آکادمی ریاضی</p><h1>نظام آموزشی دیجیتال</h1></div></div>
-        <nav class="main-nav" aria-label="پیمایش"><a href="#grades">صنوف</a><a href="#lessons">درس‌ها</a><a href="#practice">خودآزمایی</a><a href="#prints">فورم‌ها</a><a href="#dashboard">پیشرفت</a></nav>
-        <div class="top-actions"><button class="lang-btn active" data-lang="dr">دری</button><button class="lang-btn" data-lang="fa">فارسی</button></div>
-      </header>
-      <main>
-        <section class="hero"><div class="hero-copy"><span class="eyebrow">یادگیری ساده، هدفمند و آفلاین</span><h2>از حساب تا ریاضیات عالی</h2><p>نقشهٔ منظم درس‌های ریاضی برای صنوف هفتم تا دوازدهم؛ چهار شاخهٔ حساب، الجبر، هندسه و مثلثات، همراه با گام‌های یادگیری، یادداشت شاگرد و فورم‌های چاپی.</p><div class="cta-row"><a href="#grades" class="primary-btn">شروع یادگیری</a><button class="secondary-btn" id="printWorkshopBtn">چاپ فهرست این شاخه</button></div><div class="stat-row"><div class="stat-box"><strong>۶</strong><span>صنف</span></div><div class="stat-box"><strong>۴</strong><span>شاخهٔ ریاضی</span></div><div class="stat-box"><strong>آفلاین</strong><span>پشتیبانی</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="card-visual card-visual-main"><div class="mini-chart"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span></div><div class="math-surface"><div class="shape triangle"></div><div class="shape circle"></div><div class="shape square"></div></div></div></div></section>
-        <section id="grades" class="panel"><div class="section-header"><div><span class="small-tag">مرحلهٔ اول</span><h3>انتخاب صنف</h3></div></div><div id="gradeTabs" class="grade-tabs" aria-label="صنف‌ها"></div><div class="curriculum-note">این فهرست، نقشهٔ پیشنهادی مباحث است. ترتیب نهایی و محتوای درسی باید با کتاب‌های رسمی وزارت معارف افغانستان تطبیق شود.</div></section>
-        <section id="lessons" class="panel"><div class="section-header"><div><span class="small-tag">مرحلهٔ دوم</span><h3>شاخه و موضوعات درسی</h3></div></div><div id="lessonGrid" class="lesson-grid"></div></section>
-        <section class="detail-panel" id="lessonDetailSection"><div class="section-header"><div><span class="small-tag">مسیر یادگیری موضوع</span><h3 id="detailTitle">موضوع درسی</h3></div></div><div id="lessonDetail" class="lesson-detail"></div></section>
-        <section id="practice" class="panel quiz-panel"><div class="section-header"><div><span class="small-tag">تمرین</span><h3>خودآزمایی</h3></div></div><div id="quizCard" class="quiz-card"></div></section>
-        <section id="prints" class="panel"><div class="section-header"><div><span class="small-tag">چاپ</span><h3>فورم‌های صنف و شاخه</h3></div></div><div id="printForms" class="print-forms"></div></section>
-        <section id="dashboard" class="panel dashboard-panel"><div class="section-header"><div><span class="small-tag">پیشرفت روی همین دستگاه</span><h3>داشبورد شاگرد</h3></div></div><div class="dashboard-grid"><div class="mini-card progress-card"><p>پیشرفت کلی</p><strong id="overallProgress">0٪</strong><div class="progress-track"><span id="progressBar"></span></div></div><div class="mini-card"><p>خودآزمایی‌های ثبت‌شده</p><strong id="quizCount">0</strong></div><div class="mini-card"><p>موضوعات آموخته‌شده</p><strong id="lessonCount">0</strong></div></div></section>
-        <section class="panel admin-panel"><div class="section-header"><div><span class="small-tag">مدیر / آموزگار</span><h3>یادداشت نسخه</h3></div></div><p>در این نسخه، نقشهٔ موضوعات و مسیر مطالعه آماده است. ورود حساب کاربری، مدیریت چندشاگردی و درس‌های کاملِ تألیف‌شده باید در مرحله‌های بعدی افزوده شود.</p></section>
-      </main>
-    </div>
-    <script src="./curriculum-data.js"></script>
-    <script src="./app-v2.js"></script>
-  </body>
+  <body><div class="page-shell">
+    <header class="topbar"><div class="brand-wrap"><div class="brand-badge">📘</div><div><p class="brand-kicker">آکادمی ریاضی</p><h1>نظام آموزشی دیجیتال</h1></div></div><nav class="main-nav" aria-label="پیمایش"><a href="#subjects">شاخه‌ها</a><a href="#lessons">عنوان‌های درسی</a><a href="#practice">خودآزمایی</a><a href="#prints">کاربرگ‌ها</a><a href="#dashboard">پیشرفت</a></nav></header>
+    <main>
+      <section class="hero"><div class="hero-copy"><span class="eyebrow">یادگیری ساده، منظم و آفلاین</span><h2>چهار شاخهٔ ریاضی، از ساده تا پیشرفته</h2><p>یکی از شاخه‌ها را انتخاب کنید، عنوان‌ها را به ترتیب یاد بگیرید، متن و مثال درس را بخوانید، ویدیوی همان موضوع را ببینید و کاربرگ مستقل ۳۰ پرسشی چاپ کنید.</p><div class="cta-row"><a href="#subjects" class="primary-btn">شروع یادگیری</a><button class="secondary-btn" id="printWorkshopBtn">چاپ کاربرگ همین عنوان</button></div><div class="stat-row"><div class="stat-box"><strong>۴</strong><span>شاخهٔ ریاضی</span></div><div class="stat-box"><strong>۳۰</strong><span>پرسش برای هر عنوان</span></div><div class="stat-box"><strong>آفلاین</strong><span>پشتیبانی</span></div></div></div><div class="hero-art" aria-hidden="true"><div class="orb orb-one"></div><div class="orb orb-two"></div><div class="card-visual card-visual-main"><div class="mini-chart"><span class="bar b1"></span><span class="bar b2"></span><span class="bar b3"></span><span class="bar b4"></span></div><div class="math-surface"><div class="shape triangle"></div><div class="shape circle"></div><div class="shape square"></div></div></div></div></section>
+      <section id="subjects" class="panel"><div class="section-header"><div><span class="small-tag">مرحلهٔ اول</span><h3>شاخه‌های ریاضی</h3></div></div><div id="gradeTabs" class="grade-tabs" aria-label="شاخه‌های ریاضی"></div><p class="curriculum-note">عنوان‌ها از مبانی به مباحث پیشرفته‌تر مرتب شده‌اند؛ نام صنف در صفحهٔ شاگرد نمایش داده نمی‌شود.</p></section>
+      <section id="lessons" class="panel"><div class="section-header"><div><span class="small-tag">مرحلهٔ دوم</span><h3>عنوان‌های درسی</h3></div></div><div id="lessonGrid" class="lesson-grid"></div></section>
+      <section class="detail-panel" id="lessonDetailSection"><div class="section-header"><div><span class="small-tag">درس تحریری و مثال</span><h3 id="detailTitle">موضوع درسی</h3></div></div><div id="lessonDetail" class="lesson-detail"></div></section>
+      <section id="practice" class="panel quiz-panel"><div class="section-header"><div><span class="small-tag">تمرین</span><h3>خودآزمایی</h3></div></div><div id="quizCard" class="quiz-card"></div></section>
+      <section id="prints" class="panel"><div class="section-header"><div><span class="small-tag">کاربرگ جداگانه برای هر عنوان</span><h3>کاربرگ‌های ۳۰ پرسشی</h3></div></div><div id="printForms" class="print-forms"></div></section>
+      <section id="dashboard" class="panel dashboard-panel"><div class="section-header"><div><span class="small-tag">پیشرفت روی همین دستگاه</span><h3>داشبورد شاگرد</h3></div></div><div class="dashboard-grid"><div class="mini-card progress-card"><p>پیشرفت کلی</p><strong id="overallProgress">۰٪</strong><div class="progress-track"><span id="progressBar"></span></div></div><div class="mini-card"><p>خودآزمایی‌های ثبت‌شده</p><strong id="quizCount">۰</strong></div><div class="mini-card"><p>عنوان‌های آموخته‌شده</p><strong id="lessonCount">۰</strong></div></div></section>
+      <section class="panel admin-panel"><div class="section-header"><div><span class="small-tag">یادداشت آموزشی</span><h3>دربارهٔ محتوا</h3></div></div><p>فهرست موضوعات بر اساس مسیر پیشنهادی آموزشی مرتب شده است. محتوای مثال‌ها و ترتیب نهایی باید با کتاب درسی مصوب و نظر آموزگار تطبیق شود.</p></section>
+    </main></div><script src="./curriculum-data.js"></script><script src="./app-v3.js"></script></body>
 </html>
