@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#7c3aed" />
+    <meta
+      name="description"
+      content="سیستم آموزشی دیجیتالی ریاضی برای صنوف هفتم تا دوازدهم، با آموزش آفلاین، تمرین‌ها، آزمون‌ها و فورم‌های قابل چاپ."
+    />
+    <link rel="manifest" href="./manifest.webmanifest" />
+    <link rel="icon" href="./icon.svg" type="image/svg+xml" />
+    <link rel="stylesheet" href="./styles.css" />
+    <title>آکادمی ریاضی | نظام آموزشی دیجیتال</title>
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="topbar">
+        <div class="brand-wrap">
+          <div class="brand-badge">📘</div>
+          <div>
+            <p class="brand-kicker">آکادمی ریاضی</p>
+            <h1>نظام آموزشی دیجیتال</h1>
+          </div>
+        </div>
+
+        <nav class="main-nav" aria-label="Navigation">
+          <a href="#grades">صنوف</a>
+          <a href="#lessons">درس‌ها</a>
+          <a href="#practice">تمرین</a>
+          <a href="#prints">فورم‌ها</a>
+          <a href="#dashboard">پیشرفت</a>
+        </nav>
+
+        <div class="top-actions">
+          <button class="lang-btn active" data-lang="dr">دری</button>
+          <button class="lang-btn" data-lang="fa">فارسی</button>
+        </div>
+      </header>
+
+      <main>
+        <section class="hero">
+          <div class="hero-copy">
+            <span class="eyebrow">یادگیری ساده، هدفمند و جذاب</span>
+            <h2>از حساب تا ریاضیات عالی</h2>
+            <p>
+              برای شاگردان صنوف هفتم تا دوازدهم، با درس‌های مرحله‌به‌مرحله، تمرین‌های تعاملی، آزمون‌ها، لینک‌های ویدیویی و فورم‌های قابل چاپ.
+            </p>
+            <div class="cta-row">
+              <a href="#grades" class="primary-btn">شروع یادگیری</a>
+              <button class="secondary-btn" id="printWorkshopBtn">چاپ فورم</button>
+            </div>
+            <div class="stat-row">
+              <div class="stat-box">
+                <strong>12</strong>
+                <span>صنف</span>
+              </div>
+              <div class="stat-box">
+                <strong>48+</strong>
+                <span>درس</span>
+              </div>
+              <div class="stat-box">
+                <strong>آفلاین</strong>
+                <span>پشتیبانی</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-art" aria-hidden="true">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="card-visual card-visual-main">
+              <div class="mini-chart">
+                <span class="bar b1"></span>
+                <span class="bar b2"></span>
+                <span class="bar b3"></span>
+                <span class="bar b4"></span>
+              </div>
+              <div class="math-surface">
+                <div class="shape triangle"></div>
+                <div class="shape circle"></div>
+                <div class="shape square"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="grades" class="panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">انتخاب صنف</span>
+              <h3>مسیر آموزش</h3>
+            </div>
+          </div>
+          <div id="gradeTabs" class="grade-tabs" aria-label="Grades"></div>
+        </section>
+
+        <section id="lessons" class="panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">درس‌ها</span>
+              <h3>فهرست آموزشی</h3>
+            </div>
+          </div>
+          <div id="lessonGrid" class="lesson-grid"></div>
+        </section>
+
+        <section class="detail-panel" id="lessonDetailSection">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">درس انتخاب‌شده</span>
+              <h3 id="detailTitle">رویکرد آموزشی</h3>
+            </div>
+          </div>
+          <div id="lessonDetail" class="lesson-detail"></div>
+        </section>
+
+        <section id="practice" class="panel quiz-panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">تمرین تعاملی</span>
+              <h3>آزمون کوتاه</h3>
+            </div>
+          </div>
+          <div id="quizCard" class="quiz-card"></div>
+        </section>
+
+        <section id="prints" class="panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">فورم</span>
+              <h3>فورم‌های قابل چاپ</h3>
+            </div>
+          </div>
+          <div id="printForms" class="print-forms"></div>
+        </section>
+
+        <section id="dashboard" class="panel dashboard-panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">پیشرفت</span>
+              <h3>داشبورد شاگرد</h3>
+            </div>
+          </div>
+          <div class="dashboard-grid">
+            <div class="mini-card progress-card">
+              <p>پیشرفت کلی</p>
+              <strong id="overallProgress">0%</strong>
+              <div class="progress-track"><span id="progressBar"></span></div>
+            </div>
+            <div class="mini-card">
+              <p>آزمون��های انجام‌شده</p>
+              <strong id="quizCount">0</strong>
+            </div>
+            <div class="mini-card">
+              <p>درس‌های تکمیل‌شده</p>
+              <strong id="lessonCount">0</strong>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel admin-panel">
+          <div class="section-header">
+            <div>
+              <span class="small-tag">مدیر / آموزگار</span>
+              <h3>مدیریت محتوای آموزشی</h3>
+            </div>
+          </div>
+          <div class="admin-grid">
+            <div class="admin-box">
+              <h4>افزودن درس</h4>
+              <p>در نسخهٔ آینده می‌توان درس‌های جدید را با فرم ساده اضافه کرد.</p>
+            </div>
+            <div class="admin-box">
+              <h4>مدیریت آزمون</h4>
+              <p>بخش آزمون‌ها به‌صورت پویا و متنوع سازگار می‌شود.</p>
+            </div>
+            <div class="admin-box">
+              <h4>گزارش پیشرفت</h4>
+              <p>برای هر شاگرد، میزان یادگیری و نمرات ثبت می‌شود.</p>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+
+    <script src="./app.js"></script>
+  </body>
+</html>
+
