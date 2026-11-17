@@ -1,9 +1,5 @@
-/* Added styles for the organized six-grade/four-branch curriculum. */
-.subject-tabs { margin: 14px 0 20px; }
-.subject-count { display: inline-grid; place-items: center; min-width: 24px; height: 24px; margin-right: 8px; padding: 0 6px; border-radius: 999px; background: rgba(255,255,255,.55); font-size: .8rem; }
-.learning-roadmap,.lesson-summary { margin-top: 16px; padding: 16px; border: 1px solid var(--border); border-radius: 18px; background: rgba(124,58,237,.035); }
-.learning-roadmap h4,.lesson-summary h4 { margin: 0 0 8px; }
-.learning-roadmap ol { padding-right: 22px; color: var(--muted); line-height: 2; }
-.lesson-activity textarea,.quiz-card textarea { width: 100%; margin: 8px 0 12px; padding: 12px; border: 1px solid var(--border); border-radius: 12px; background: #fff; color: var(--ink); font: inherit; line-height: 1.8; resize: vertical; }
-.reflection-label { display: block; font-weight: 700; }
-#reflectionStatus { display: block; margin-top: 10px; color: var(--purple-dark); }
+/* Additions to the original academy theme for searchable syllabus and lesson details. */
+.subject-tabs{margin:14px 0 20px}.subject-count{display:inline-grid;place-items:center;min-width:24px;height:24px;margin-right:8px;padding:0 6px;border-radius:999px;background:rgba(255,255,255,.55);font-size:.8rem}
+.topic-search-label{display:block;margin:14px 0 8px;font-weight:700}.topic-search-row{display:flex;gap:10px}.topic-search-row input{flex:1;min-width:0;padding:12px 14px;border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--ink);font:inherit}.search-hint{min-height:1.5em;color:var(--muted);font-size:.92rem}.empty-state{grid-column:1/-1;padding:20px;text-align:center;color:var(--muted)}
+.learning-roadmap,.lesson-summary{margin-top:16px;padding:16px;border:1px solid var(--border);border-radius:18px;background:rgba(124,58,237,.035)}.learning-roadmap h4,.lesson-summary h4{margin:0 0 8px}.learning-roadmap p,.lesson-summary p{line-height:1.9}.learning-roadmap ol{padding-right:22px;color:var(--muted);line-height:2}
+.lesson-activity textarea,.quiz-card textarea{width:100%;margin:8px 0 12px;padding:12px;border:1px solid var(--border);border-radius:12px;background:#fff;color:var(--ink);font:inherit}.reflection-label{display:block;font-weight:700}#reflectionStatus{display:block;margin-top:10px;color:var(--purple-dark)}.video-link{display:inline-flex;margin:8px 0;padding:10px 14px;border-radius:12px;background:rgba(124,58,237,.1);color:var(--purple-dark);font-weight:700;text-decoration:none}.lesson-aside .print-btn,.lesson-aside .primary-btn{width:100%;margin-top:10px;justify-content:center}.lesson-aside>a{display:block;margin:12px 0}
